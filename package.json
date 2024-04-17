@@ -1,7 +1,7 @@
 {
-  "name": "ally-custom-driver",
+  "name": "adonis-ally-strava",
   "version": "0.0.0",
-  "description": "A boilerplate for a custom ally driver",
+  "description": "A Strava driver of AdonisJS Ally",
   "main": "build/providers/index.js",
   "files": [
     "build/src",
@@ -20,11 +20,20 @@
     "format": "prettier --write .",
     "version": "npm run build"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gabriiellllll/adonis-ally-strava.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gabriiellllll/adonis-ally-strava/issues"
+  },
   "keywords": [
     "adonisjs",
-    "adonis-ally"
+    "adonis-ally",
+    "adonis-strava",
+    "adonis-ally-strava"
   ],
-  "author": "",
+  "author": "Gabriel <@gabriiellllll>",
   "license": "MIT",
   "devDependencies": {
     "@adonisjs/ally": "^4.0.0",
@@ -45,12 +54,12 @@
   "adonisjs": {
     "instructionsMd": "./build/instructions.md",
     "env": {
-      "YOUR_DRIVER_CLIENT_ID": "",
-      "YOUR_DRIVER_CLIENT_SECRET": ""
+      "STRAVA_CLIENT_ID": "",
+      "STRAVA_CLIENT_SECRET": ""
     },
-    "types": "ally-custom-driver",
+    "types": "adonis-ally-strava",
     "providers": [
-      "ally-custom-driver"
+      "adonis-ally-strava"
     ]
   }
 }
